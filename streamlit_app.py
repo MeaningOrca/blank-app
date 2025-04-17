@@ -1,5 +1,9 @@
 import io
 import streamlit as st
+import os
+
+result = os.popen('pip list').read()
+st.code(result, language=None)
 
 from PIL import Image
 from cnocr import CnOcr
